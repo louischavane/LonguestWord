@@ -1,0 +1,13 @@
+<h1>Résultats</h1>
+
+
+<p>Votre mot : <%= @word %></p>
+<p>Votre grille : <%= @grid %></p>
+<p>Traduction : <%= @result[:translation] %></p>
+<p>Score : <%= @result[:score] %></p>
+<p>Message : <%= @result[:message] %></p>
+<p>Temps : <%= @result[:time] %></p>
+<p>Vous avez joué <%= @count %> parties </p>
+
+
+<%= link_to "Rejouer", game_path%>

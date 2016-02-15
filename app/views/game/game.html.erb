@@ -1,0 +1,13 @@
+<h1>Bienvenue aux chiffres et aux lettres</h1>
+
+<p>Votre grille : <%= @grid %> </p>
+
+<form action="/game/score" method="post">
+  <label for="word"> Votre réponse</label>
+  <input type="text" name="word" id="word">
+  <input type="hidden" name="grid" id="grid" value="<%= @grid %>">
+  <input type="hidden" name="start_time" id="start_time" value="<%= @start_time %>">
+
+  <input type="submit" value="je valide">
+</form>
+
